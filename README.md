@@ -3,7 +3,7 @@
 # Thông Tin Cá Nhân
 - Họ Và Tên: Phạm Trí Thành
 - Mã Số Sinh Viên: DH52201466
-- Chuyên Ngành: IT (Công Nghệ Thông Tin) Của Trường Đại -Học Công Nghệ Sài STU
+- Chuyên Ngành: IT (Công Nghệ Thông Tin) Của Trường Đại Học Công Nghệ Sài STU
 # Các Chức Năng Chính
 - Hệ Thống Đăng Nhập: quản lý truy cập người dùng bằng nhập tài khoản và mật khẩu ('loginActivity.java')
 - Danh Sách Pokemon: giúp người dùng thấy được đa dạng các loại pokemon hiện lên danh sách và có hình của pokemon đó ('MainActivity.java')
