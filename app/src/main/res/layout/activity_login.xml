@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD700"
+        android:text="@string/login_title"
+        android:textColor="#800000"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+    <ImageView
+        android:id="@+id/image_pokemon"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pokemon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_pokemon"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_background">
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_username"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/login_text"/>
+
+        <TextView
+            android:id="@+id/password_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_password"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/login"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/password_text"/>
+        <Button
+            android:id="@+id/btnButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:backgroundTint="#673AB7"
+            android:layout_below="@+id/password"/>
+    </LinearLayout>
+</RelativeLayout>
+
